@@ -1,6 +1,6 @@
 # tomcat
 server:
-  port: 9001
+  port: 8899
   servlet:
     context-path: /thtf-generator
 spring:
