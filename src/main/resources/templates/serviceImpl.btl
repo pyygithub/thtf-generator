@@ -34,6 +34,7 @@ import ${table.daoPackageName}.${table.className}Mapper;
  */
 @Slf4j
 @Service
+@Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.DEFAULT,timeout=36000,rollbackFor=Exception.class)
 public class ${table.className}ServiceImpl implements ${table.className}Service {
 
 	@Autowired
